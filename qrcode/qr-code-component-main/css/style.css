@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 * {
   margin: 0;
@@ -13,29 +13,33 @@ body {
 }
 
 main {
-  margin: 100px auto 0px;
-  text-align: center;
-  width: min(90vw, 450px);
-  height: 660px;
-  background-color: hsl(0, 0%, 100%);
-  padding: 20px;
+  display: flex;
+  margin: 50px auto;
+  flex-flow: column wrap;
+  align-items: center;
+  max-width: min(90vw, 450px);
+  background-color: white;
   border-radius: 20px;
+  padding: 20px;
 }
 
 h1 {
+  font-size: clamp(20px, 7vw, 32px);
   font-weight: 700;
-  margin: 20px 0px;
+  text-align: center;
+  margin: 10px 0px;
 }
 
 p {
-  font-size: 24px;
+  font-size: clamp(16px, 5vw, 24px);
   font-weight: 400;
   color: hsl(216, 15%, 48%);
+  text-align: center;
 }
 
 img {
-  width: min(75vw, 400px);
   border-radius: 20px;
+  max-width: 100%;
 }
 
 .attribution {
